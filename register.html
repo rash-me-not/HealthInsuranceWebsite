@@ -1,0 +1,28 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/headerstyle.css">
+  <title>REGISTRATION</title>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo">YOUR HEALTH IS AN INVESTMENT NOT AN EXPENSE</a>
+    <div class="header-right">
+      <a class="active" href="home.html">Home</a>
+      <a class="active" href="features.html">Features and Benefits</a>
+      <a class="active" href="register.html">Registration</a>
+      <a class="active" href="login.html">Login</a>
+    </div>
+  </div>
+  <h3 class="fw-title">REGISTRATION:<!-- ParagraphTitleEnd --></h3>
+  <div class="container">
+    <form action="registration.php" method="post">
+      <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
+      <input type="text" placeholder="Username" name="username" required size=30><br><br>
+      <input type="email" placeholder="Email" name="email" required size=30><br><br>
+      <input type="password" placeholder="Password" name="password" required size=30><br><br>
+      <input type="password" placeholder="Confirm Password" name="confirm_password" required size=30><br><br>
+      <input type="submit" name="submit" required size=30>
+    </form>
+  </div>
+</body>
+</html>
